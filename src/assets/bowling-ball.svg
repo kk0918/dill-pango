@@ -1,0 +1,22 @@
+<?xml version="1.0"?><svg width="793.7007874015749" height="793.7007874015749" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <title>bowling ball</title>
+ <defs>
+  <linearGradient id="linearGradient1535">
+   <stop stop-color="#000000" offset="0" id="stop1536"/>
+   <stop stop-color="#ffffff" offset="1" id="stop1537"/>
+  </linearGradient>
+  <radialGradient xlink:href="#linearGradient1535" r="2.852761" id="radialGradient1538" fy="0.5" fx="0.5" cy="0.5" cx="0.5"/>
+  <radialGradient xlink:href="#linearGradient1535" r="3.419279" id="radialGradient1542" fy="0.5" fx="0.5" cy="0.5" cx="0.5"/>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <path fill="#ffffff" fill-rule="evenodd" stroke="#000000" stroke-width="1.0000000pt" id="path911" d="0"/>
+  <g transform="rotate(135, 396.85, 427.59)" id="svg_3">
+   <path fill="url(#radialGradient1538)" fill-rule="evenodd" stroke="#000000" stroke-width="6.25" stroke-miterlimit="4" id="path909" d="m609.906128,427.590149a213.055893,213.055893 0 1 0 -426.111755,0a213.055893,213.055893 0 1 0 426.111755,0z"/>
+   <path fill="url(#radialGradient1542)" fill-rule="evenodd" stroke-width="1.0000000pt" id="path1534" d="m584.064697,423.271454a188.654816,188.654816 0 1 0 -377.30957,0a188.654816,188.654816 0 1 0 377.30957,0z"/>
+   <path fill="#ffffff" fill-rule="evenodd" stroke="#000000" stroke-width="1.0000000pt" id="path910" d="m359.116241,313.359741a19.797785,17.215466 0 1 0 -39.595581,41.368927a19.797785,17.215466 0 1 0 39.595581,-41.368927z"/>
+   <path fill="#ffffff" fill-rule="evenodd" stroke="#40403f" stroke-width="2.5" stroke-miterlimit="4" id="path912" d="m401.377502,467.894318a31.320572,31.320572 0 1 0 -62.641113,0a31.320572,31.320572 0 1 0 62.641113,0z"/>
+   <path id="svg_1" fill="#ffffff" fill-rule="evenodd" stroke="#40403f" stroke-width="2.5" stroke-miterlimit="4" d="m276.895477,428.299011a31.320572,31.320572 0 1 0 -62.641113,0a31.320572,31.320572 0 1 0 62.641113,0z"/>
+  </g>
+ </g>
+</svg>
