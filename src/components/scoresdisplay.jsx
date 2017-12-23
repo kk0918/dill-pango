@@ -51,7 +51,7 @@ class ScoresDisplay extends React.Component {
 	           <Col xs={12} sm={3} md={2} lg={1}>
 	            <FrameDiv>
 	            	<h2>{`Frame #${i+1}`} </h2>
-	            	<h3>{`Score: ${this.state.returnedScores[obj]}`}</h3>
+	            	<h3>{`Score: ${this.state.returnedScores[obj][0]} / ${this.state.returnedScores[obj][1]}`}</h3>
 	            </FrameDiv>
 	           </Col>
 			))}

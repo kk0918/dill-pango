@@ -5,11 +5,11 @@ import styled from 'styled-components';
 import { SocialIcon } from 'react-social-icons';
 
 const FooterDiv = styled.div`
-  position: absolute;
+  position: fixed;
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 1rem;
+  padding: 5px;
   background-color: #efefef;
   text-align: center;
   margin: 0 auto;
@@ -21,11 +21,11 @@ class Footer extends React.Component {
 		return (
 	        <FooterDiv>
 	        	 <ul class="social-icons">
-	        	 	<SocialIcon network="email"/>
-	        	 	<SocialIcon network="email" color="#26539b"/>
-	        	 	<SocialIcon url="http://facebook.com" network="facebook"/>
-	        	 	<SocialIcon url="http://twitter.com" network="twitter"/>
-	        	 	<SocialIcon url="http://youtube.com" network="youtube"/>
+	        	 	<SocialIcon network="email" style={{ height: 35, width: 35 }}/>
+	        	 	<SocialIcon network="email" color="#26539b" style={{ height: 35, width: 35 }}/>
+	        	 	<SocialIcon url="http://facebook.com" network="facebook" style={{ height: 35, width: 35 }}/>
+	        	 	<SocialIcon url="http://twitter.com" network="twitter" style={{ height: 35, width: 35 }}/>
+	        	 	<SocialIcon url="http://youtube.com" network="youtube" style={{ height: 35, width: 35 }}/>
 			    </ul>
 	        </FooterDiv>
 		);

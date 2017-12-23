@@ -8,7 +8,7 @@ import{ Modal, ModalManager, Effect } from 'react-dynamic-modal';
 import ScoresDisplay from '../components/scoresdisplay';
 
 const OuterContentDiv = styled.div`
-	background-color: white;
+	background-color: green;
  	display: flex;
   	flex-direction: column;
 	height: 500px;
@@ -25,6 +25,7 @@ const Button = styled.button`
 	color: palevioletred;
 	font-size: 1em;
 	margin-top: 100px;
+	margin-bottom: 150px;
 	padding: 0.25em 1em;
 	border: 2px solid palevioletred;
 	border-radius: 3px;
@@ -103,10 +104,9 @@ class MyModal extends React.Component{
 		this.onSubmit = this.onSubmit.bind(this);
 	}
 
-	onSubmit() {
+	onSubmit(Modal) {
 		if (this.state.filesToBeSent.length > 0) {
     		this.getBase64().then(result => {
-    			console.log(result);
     			fetch('http://www.mocky.io/v2/5a3722962f0000fb20127b3d', {
     				mode: 'no-cors',
 					method: 'POST',
@@ -117,6 +117,9 @@ class MyModal extends React.Component{
 					body: JSON.stringify({
 						image: result
 					})
+				}).then(res => {
+					Modal.close();
+					console.log("Res succeeded?",res.ok)
 				})
     		});
   		}
@@ -128,11 +131,10 @@ class MyModal extends React.Component{
 			 reader.readAsDataURL(this.state.filesToBeSent[0][0])
 			 reader.onload = () => {
 			 if (!!reader.result) {
-				resolve(reader.result)
-		     }
-			 else {
-			     reject(Error("Failed converting to base64"))
-			    }
+				resolve(reader.result);
+		     } else {
+			     reject(Error("Failed converting to base64"));
+			 }
 		 	}
 		});
 	}
@@ -159,7 +161,7 @@ class MyModal extends React.Component{
 		        </Dropzone>
 	        </DropDiv>
 	        <ModalButton onClick={ModalManager.close}>Close </ModalButton>
-	        <ModalButton onClick={this.onSubmit}>Submit </ModalButton>
+	        <ModalButton onClick={this.onSubmit(ModalManager)}>Submit </ModalButton>
          </Modal>
       );
    }
